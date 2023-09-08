@@ -13,6 +13,7 @@ public class ControleDeFluxoDesafioDio {
         }
         catch(InputMismatchException e) {
             System.out.println("Os campos precisam ser numéricos.");
+        scanner.close();
         }
         
     }
@@ -26,7 +27,8 @@ public class ControleDeFluxoDesafioDio {
             System.out.println("O segundo número deve ser maior que o primeiro");
         
 
-        for(contagem = 0; ;);
+        for(conta = contagem; conta >= 1; conta --);
+        System.out.println("Houveram interações" + conta);
 
     }
 }
