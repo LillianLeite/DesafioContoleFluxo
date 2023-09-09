@@ -11,6 +11,11 @@ public class Contador<numero1> {
         int numero1 = scanner.nextInt();
         System.out.println("Digite outro número: ");
         int numero2 = scanner.nextInt();
+        int contagem = numero2 - numero1;
+
+        System.out.println("Houveram a seguintes iterações");
+        contar(contagem);
+
 
         scanner.close();
 
@@ -27,14 +32,10 @@ public class Contador<numero1> {
             System.out.println(ex.getMessage());
         }
     }
-    
 
-    static void contar(int numero1, int numero2) {
-
-        int contagem = numero2 - numero1;
-
-        for(int acumular = contagem; acumular >= 1; acumular ++){
-            System.out.println("Houveram" + acumular + "iterações");
+    static void contar(int contagem) {
+        for(int acumular = contagem; acumular >= 1; acumular --){
+            System.out.println("Imprimindo número " + acumular);
         }
     }
 }
