@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Contador<numero1> {
+public class Contador {
     public static void main(String[] args) {
         try{
             try{
