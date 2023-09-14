@@ -34,7 +34,7 @@ public class Contador {
     }
 
     static void contar(int contagem) {
-        for(int acumular = contagem; acumular >= 1; acumular --){
+        for(int acumular = 0; acumular < contagem; acumular ++){
             System.out.println("Imprimindo número " + acumular);
         }
     }
